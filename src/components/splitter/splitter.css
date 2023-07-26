@@ -1,0 +1,324 @@
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.splitter {
+    background: #C5E4E7;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.splitterWrapper {
+    display: flex;
+    flex-direction: column;
+
+    gap: 50px;
+}
+
+.splitterCard {
+    display: flex;
+    background-color: white;
+    width: 920px;
+    height: 480px;
+    box-sizing: border-box;
+    padding: 30px 40px;
+    border-radius: 20px;
+    gap: 50px;
+
+}
+
+.splitterTitle {
+    text-align: center;
+    color: #3D6666;
+}
+
+.splitterText {
+    letter-spacing: 10px;
+    font-size: 24px;
+}
+
+.splitterCardLeft {
+    flex: 10;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+
+.splitterCardLeftBill {
+    width: 100%;
+
+}
+
+.splitterCardLeftBillTitle {
+    color: #5E7A7D;
+    margin-bottom: 5px;
+    font-size: 16px;
+
+}
+
+.splitterCardLeftBillValue {
+    background-color: #F3F9FA;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.splitterCardLeftBillValueIcon {
+    position: absolute;
+    left: 20px;
+}
+
+.splitterCardLeftBillValueInput {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: right;
+    height: 50px;
+    font-size: 24px;
+    padding-right: 20px;
+    color: #00474B;
+
+}
+
+.splitterCardLeftBillValueInput:focus {
+    outline: 2px solid #26C2AE;
+    border-radius: 8px;
+}
+
+
+.splitterCardLeftTipTitle {
+    color: #5E7A7D;
+    margin-bottom: 10px;
+    font-size: 16px;
+
+}
+
+.splitterCardLeftTipBoxs {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+    
+}
+
+.splitterCardLeftTipBox {
+    background-color: #00474B;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    
+}
+
+.splitterCardLeftCustomBox {
+    background-color: #F3F9FA;
+    color: #00474B;
+    width: 115px;
+    height: 50px;
+    border-radius: 8px;
+    border: none;
+    text-align: right;
+    font-size: 22px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    
+}
+
+.splitterCardLeftTipBox:hover {
+    background-color: #9FE8DF;
+    color: #00474B;
+}
+
+.splitterCardLeftTipBoxSelected {
+        background-color: #26C2AE;
+        color: #00474B;
+}
+
+.splitterCardLeftCustomBox:focus {
+    outline: 2px solid #26C2AE;
+}
+
+.splitterCardLeftCustomBox::placeholder {
+    font-size: 22px;
+    text-align: center;
+}
+
+.splitterCardLeftPeopleTitle {
+    color: #5E7A7D;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.splitterCardLeftPeopleValue {
+    background-color: #F3F9FA;
+    height: 50px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.splitterCardLeftPeopleValueIcon {
+    position: absolute;
+    left: 20px;
+}
+
+.splitterCardLeftPeopleValueInput {
+    height: 50px;
+    width: 100%;
+    background-color: transparent;
+    outline: none;
+    border: none;
+    text-align: right;
+    font-size: 24px;
+    padding-right: 20px;
+    cursor: pointer;
+    color: #00474B;
+}
+
+.splitterCardLeftPeopleValueInput:focus {
+    outline: 2px solid #26C2AE;
+    border-radius: 8px;
+}
+
+.redOutline {
+    outline: 2px solid #E17052;
+}
+
+
+.splitterCardRight {
+    flex: 10;
+    background-color: #00474B;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 30px;
+    padding-top: 40px;
+}
+
+.splitterCardRightTipAmount, .splitterCardRightTotal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.splitterCardRightTipAmountLeftTop, .splitterCardRightTotalLeftTop {
+    color: white;
+    font-size: 16px;
+}
+
+.splitterCardRightTipAmountLeftBottom, .splitterCardRightTipTotalLeftBottom {
+    font-size: 13px;
+    color: #7F9D9F;
+}
+
+.splitterCardRightTipAmountRightPrice , .splitterCardRightTotalRightPrice {
+    color: #26C2AE;
+    font-size: 48px;
+}
+
+.splitterCardRightButtonWrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.splitterCardRightButton {
+    width: 90%;
+    height: 48px;
+    background-color: #26C2AE;
+    color: #00474B;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    font-size: 20px;
+    position: relative;
+    bottom: -90px;
+}
+
+.passiveButton {
+    background-color: #0D686D;
+    color: #00474B;
+}
+
+.splitterCardRightButton:hover {
+    background-color: #9FE8DF;
+}
+
+@media (max-width:500px) {
+    .splitterCard {
+        flex-direction: column;
+        width: 375px;
+        height: 650px;
+        padding: 20px 30px;
+        gap: 10px;
+        position: relative;
+        bottom: -50px;
+
+    }
+
+
+    .splitterTitle {
+        position: relative;
+        bottom: -75px;
+    }
+
+
+
+    .splitterCardRight {
+        padding: 30px;
+    }
+    
+    .splitterCardRightTipAmount, .splitterCardRightTotal {
+        margin-bottom: 10px;
+    }
+    
+    
+    .splitterCardRightTipAmountRightPrice , .splitterCardRightTotalRightPrice {
+        color: #26C2AE;
+        font-size: 32px;
+    }
+    
+    .splitterCardLeftBillTitle, .splitterCardLeftPeopleTitle,.splitterCardLeftTipTitle {
+        margin-top: 10px;
+    }
+    
+    .splitterCardRightButton {
+        height: 40px;
+        width: 100%;
+        bottom: -20px;
+    }
+
+    
+}
+
+@media (min-height:750px) {
+    .splitterCard {
+        bottom: -20px;
+
+    }
+
+
+    .splitterTitle {
+        bottom: -20px;
+
+    }
+}
